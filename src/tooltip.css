@@ -1,0 +1,35 @@
+.map-tooltip {
+    position: absolute;
+    z-index: 9;
+    pointer-events: none;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    font-size: 14px;
+    max-width: 300px;
+    color: #333;
+}
+
+.tooltip-title {
+    margin: 0 0 6px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+}
+
+.tooltip-schools {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.tooltip-details {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+.tooltip-detail-item {
+    margin-bottom: 2px;
+}

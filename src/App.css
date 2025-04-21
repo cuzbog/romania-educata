@@ -1,0 +1,39 @@
+.map-container {
+  height: 100%;
+  position: relative;
+}
+
+.map-wrapper {
+  height: 90vh;
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+}
+
+.maplibregl-canvas {
+  cursor: default !important;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: #000 !important;
+  /* Change this to your desired color */
+  font-size: 24px;
+  /* Optional: make arrows bigger */
+  z-index: 10;
+}
+
+/* Optional: hover effect */
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  color: #1890ff !important;
+  /* Primary color on hover */
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.split-view {
+  padding: 2vh;
+}

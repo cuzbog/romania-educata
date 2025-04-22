@@ -125,7 +125,6 @@ const TownDemographicsView = ({ chartKey }) => {
     const schoolAgeFunnelData = Object.entries(groupedBySchoolAgeData).map(([stage, number]) => ({ stage, number }));
     const schools = useSchoolList(filters);
     const totalSchools = schools.length;
-    const mediu = schools[0]?.["Mediu loc. unitate"] === "Urban" ? "Urban" : "Rural";
     const totalStudents = schools.reduce((acc, school) => {
         const number_of_students = school["total_elevi"];
         acc += number_of_students;
@@ -158,9 +157,10 @@ const TownDemographicsView = ({ chartKey }) => {
                     <Title level={1} style={{ marginBottom: 0 }}>
                         {detailedTown}
                     </Title>
-                    <Tag color={mediu === "Urban" ? "#030852" : "blue"} >
-                        {mediu}
-                    </Tag>
+                    {schools.length > 0 && (
+                        <Tag color={schools[0].mediu === "urban" ? "#030852" : "blue"} >
+                            {schools[0].mediu}
+                        </Tag>)}
                 </Row>
 
                 <Title level={4} type="secondary">
